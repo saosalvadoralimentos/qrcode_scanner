@@ -13,10 +13,3 @@ dependencies:
 dev_dependencies:
   test: ^1.5.1
   test_coverage: ^0.2.0
-
-flutter:
-  plugin:
-    platforms:
-      android:
-        package: com.shinow.qrscan
-        pluginClass: QrscanPlugin
