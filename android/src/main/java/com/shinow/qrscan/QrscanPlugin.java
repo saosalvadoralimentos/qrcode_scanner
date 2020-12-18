@@ -30,7 +30,7 @@ public class QrscanPlugin implements MethodCallHandler, PluginRegistry.ActivityR
     private final int REQUEST_IMAGE = 101;
 
     public static void registerWith(Registrar registrar) {
-        MethodChannel channel = new MethodChannel(registrar.messenger(), "qrscan");
+        MethodChannel channel = new MethodChannel(registrar.messenger(), "qr_scan");
         QrscanPlugin plugin = new QrscanPlugin(registrar.activity());
         channel.setMethodCallHandler(plugin);
         registrar.addActivityResultListener(plugin);
